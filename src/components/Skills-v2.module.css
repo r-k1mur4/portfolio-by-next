@@ -1,0 +1,48 @@
+.title {
+  color: blue;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.description {
+  color: #333;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+
+
+.grid-skills-v2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    gap: 2rem;
+  display: block;
+}
+
+.skill-card {
+  background-color: #DADADB;
+  color: #1D1E20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+  cursor: context-menu;
+  width: 20%;
+}
+
+.f-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-item {
+  width: 30%;
+  text-align: center;
+}
