@@ -13,10 +13,8 @@ const Hero = () => {
         alt="R.KIMURA's personal headshot"
       />
       <div className="hero-text">
-        <h1>Hey, I'm R.KIMURA 👋</h1>
-        <p>
-          I'm a Frontend Web Developer based in Chiba.
-        </p>
+        <h1>Hey, I&apos;m R.KIMURA 👋</h1>
+        <p>I&apos;m a Frontend Web Developer based in Chiba.</p>
         <div className="social-icons">
           <a
             href="https://twitter.com/olawanle_joel"
