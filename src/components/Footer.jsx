@@ -6,8 +6,6 @@ const Footer = () => {
       <hr />
       <div className="footer-container">
         <p>© {new Date().getFullYear()} Joel&apos;s Portfolio</p>
-        <p>© {new Date().getFullYear()} Joel&39;s Portfolio</p>
-        <p>© {new Date().getFullYear()} Joels Portfolio</p>
         <div className="social_icons">
           <a
             href="https://twitter.com/olawanle_joel"

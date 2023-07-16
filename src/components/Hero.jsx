@@ -13,7 +13,7 @@ const Hero = () => {
         alt="R.KIMURA's personal headshot"
       />
       <div className="hero-text">
-        <h1>Hey, I&39;;m R.KIMURA 👋</h1>
+        <h1>Hey, I&apos;m R.KIMURA 👋</h1>
         <p>I&apos;m a Frontend Web Developer based in Chiba.</p>
         <div className="social-icons">
           <a
