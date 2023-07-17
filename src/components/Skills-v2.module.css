@@ -34,7 +34,11 @@
   cursor: context-menu;
   width: 20%;
 }
-
+@media screen and (max-width: 767px) {
+  .skill-card {
+    width: 136px;
+  }
+}
 .f-container {
   display: flex;
   flex-wrap: wrap;
@@ -45,4 +49,30 @@
 .f-item {
   width: 30%;
   text-align: center;
+}
+
+
+.headlineBox {
+  background-color: lightcyan;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  color: #333;
+}
+.headline {
+  width: 30%;
+  text-align: center;
+}
+.note {
+  font-size: 12px;
+  display: inline-block;
+  text-align: left;
+}
+
+.headline:nth-child(2){
+  /* background-color: lightcoral; */
 }
