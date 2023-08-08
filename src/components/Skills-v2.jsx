@@ -50,14 +50,14 @@ const ITEMS = [
     skillName: "React",
     wrapperClassName: "skill-card js",
     iconClassName: "fa-brands fa-react",
-    proficiency: "3( Learning Now! )",
+    proficiency: "3( Learning! )",
     taste: "",
   },
   {
     skillName: "Next",
     wrapperClassName: "skill-card js",
     iconClassName: "fa-brands",
-    proficiency: "3 ( Learning Now! )",
+    proficiency: "3 ( Learning! )",
     taste: "",
   },
   {
@@ -90,27 +90,103 @@ const ITEMS = [
   },
 ];
 
+// 配列ITEMS02 Applications
+const ITEMS02 = [
+  {
+    skillName: "Visual Studio Code",
+    wrapperClassName: "skill-card",
+    iconClassName: "",
+    proficiency: "5",
+    taste: "Like!",
+  },
+  {
+    skillName: "Vi / Vim",
+    wrapperClassName: "skill-card",
+    iconClassName: "",
+    proficiency: "3",
+    taste: "",
+  },
+  {
+    skillName: "Photoshop",
+    wrapperClassName: "skill-card",
+    iconClassName: "",
+    proficiency: "4",
+    taste: "",
+  },
+  {
+    skillName: "Illustrator",
+    wrapperClassName: "skill-card",
+    iconClassName: "",
+    proficiency: "4",
+    taste: "",
+  },
+  {
+    skillName: "Figma",
+    wrapperClassName: "skill-card",
+    iconClassName: "",
+    proficiency: "4",
+    taste: "",
+  },
+];
+
 const Skills = () => {
   return (
     // 複数スタイルを定義する場合``でくくる."-"がクラス名に存在する場合、"."でなく"[""]"でkeyをくくる
     <div className={`skills-container`}>
       <h2>Skills</h2>
+      <p className={`${styles["skills-description"]}`}>
+        HTML, CSS(SASS),
+        jQueryやSmartyを使ったサイト構築やページ運用を行ってきました。<br></br>
+        フロントエンドの開発に興味があり、ReactやVueなど勉強中です。<br></br>
+        ちなみに、このサイトもNextで作成してます。
+      </p>
 
       <div className={styles.headlineBox}>
         <h3 className={styles.headline}></h3>
         <h3 className={styles.headline}>
-          Proficiency( 習熟度 ) <br />
+          Proficiency 習熟度 <br />
           <span className={styles.note}>
             ※ 1 ~ 5<br />
-            1:軽く触った程度<br />
+            1:軽く触った程度
+            <br />
             5:実務レベルで使用できる(または使用している)
           </span>
         </h3>
         <h3 className={styles.headline}>Like or Not</h3>
       </div>
 
+      {/* Languages */}
+      <h3 className={styles.headlineSub}>
+        <i class="fa-solid fa-language"></i> Languages
+      </h3>
+
       <div className={`${styles["grid-skills-v2"]} `}>
         {ITEMS.map((item) => {
+          return (
+            // <div className="skill-card">
+            <>
+              {/* <div className={item.wrapperClassName}> */}
+              <div className={styles["f-container"]}>
+                <div className={`${styles["skill-card"]} wrapperClassName`}>
+                  <i className={item.iconClassName}></i>
+                  <p>{item.skillName}</p>
+                </div>
+                <div className={styles["f-item"]}>{item.proficiency}</div>
+                <div className={styles["f-item"]}>{item.taste}</div>
+              </div>
+              <br></br>
+            </>
+          );
+        })}
+      </div>
+
+      {/* Applications */}
+      <h3 className={styles.headlineSub}>
+        <i class="fa-solid fa-screwdriver-wrench"></i> Applications
+      </h3>
+
+      <div className={`${styles["grid-skills-v2"]} `}>
+        {ITEMS02.map((item) => {
           return (
             // <div className="skill-card">
             <>

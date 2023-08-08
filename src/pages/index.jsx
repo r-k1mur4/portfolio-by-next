@@ -6,8 +6,9 @@ import styles from '@/styles/Home.module.css'
 // ↓components↓
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Skills from '@/components/Skills';
+// import Skills from '@/components/Skills';
 import Skills2 from '@/components/Skills-v2';
+import Works from '@/components/Works';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,8 +25,8 @@ export default function Home() {
       <div>
         <Hero />
         <About />
-        <Skills />
         <Skills2 />
+        <Works />
       </div>
     </>
   );
