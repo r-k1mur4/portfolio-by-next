@@ -1,3 +1,5 @@
+
+
 import styles from "./Skills-v2.module.css";
 import { skill } from "./skill-bar";
 // components/Skills.jsx
@@ -10,7 +12,7 @@ const ITEMS = [
     iconClassName: "fa-brands fa-html5 html-icon",
     proficiency: "5",
     taste: "Like!",
-    skillParcentage: "100",
+    skillParcentage: "80",
   },
   {
     skillName: "CSS",
@@ -18,7 +20,6 @@ const ITEMS = [
     iconClassName: "fa-brands fa-css3-alt css-icon",
     proficiency: "5",
     taste: "Like!",
-    skillParcentage: "100",
   },
   {
     skillName: "Sass",
@@ -26,7 +27,6 @@ const ITEMS = [
     iconClassName: "fa-brands fa-sass css-icon",
     proficiency: "5",
     taste: "Like!",
-    skillParcentage: "100",
   },
   {
     skillName: "Bootstrap",
@@ -34,7 +34,6 @@ const ITEMS = [
     iconClassName: "fa-brands fa-bootstrap css-icon",
     proficiency: "4",
     taste: "Like!",
-    skillParcentage: "80",
   },
   {
     skillName: "JavaScript",
@@ -42,7 +41,6 @@ const ITEMS = [
     iconClassName: "fa-brands fa-js-square js-icon",
     proficiency: "4",
     taste: "",
-    skillParcentage: "80",
   },
   {
     skillName: "jQuery",
@@ -50,7 +48,6 @@ const ITEMS = [
     iconClassName: "js-icon",
     proficiency: "4",
     taste: "",
-    skillParcentage: "80",
   },
   {
     skillName: "React",
@@ -58,7 +55,6 @@ const ITEMS = [
     iconClassName: "fa-brands fa-react",
     proficiency: "3( Learning! )",
     taste: "",
-    skillParcentage: "60",
   },
   {
     skillName: "Next",
@@ -66,7 +62,6 @@ const ITEMS = [
     iconClassName: "fa-brands",
     proficiency: "3 ( Learning! )",
     taste: "",
-    skillParcentage: "60",
   },
   {
     skillName: "Vue",
@@ -74,7 +69,6 @@ const ITEMS = [
     iconClassName: "fa-brands fa-vuejs",
     proficiency: "3",
     taste: "",
-    skillParcentage: "60",
   },
   {
     skillName: "php",
@@ -82,7 +76,6 @@ const ITEMS = [
     iconClassName: "fa-brands fa-php",
     proficiency: "3",
     taste: "",
-    skillParcentage: "60",
   },
   {
     skillName: "Smarty",
@@ -90,7 +83,6 @@ const ITEMS = [
     iconClassName: "fa-brands",
     proficiency: "5",
     taste: "Like!",
-    skillParcentage: "100",
   },
   {
     skillName: "Git",
@@ -98,7 +90,6 @@ const ITEMS = [
     iconClassName: "fa-brands fa-square-git",
     proficiency: "5",
     taste: "Like!",
-    skillParcentage: "100",
   },
 ];
 
@@ -141,7 +132,6 @@ const ITEMS02 = [
   },
 ];
 
-
 const Skills = () => {
   return (
     // 複数スタイルを定義する場合``でくくる."-"がクラス名に存在する場合、"."でなく"[""]"でkeyをくくる
@@ -170,7 +160,7 @@ const Skills = () => {
 
       {/* Languages */}
       <h3 className={styles.headlineSub}>
-        <i class="fa-solid fa-language"></i> Coding
+        <i class="fa-solid fa-language"></i> Languages
       </h3>
 
       <div className={`${styles["grid-skills-v2"]} `}>
@@ -185,18 +175,17 @@ const Skills = () => {
                   <p>{item.skillName}</p>
                 </div>
                 {/* <div className={styles["f-item"]}>{item.proficiency}</div> */}
-                <div
-                  className={`skill ${styles["f-item"]}`}
-                  data-proficiency={item.skillParcentage}
-                >
+                <div className={`skill ${styles["f-item"]}`} data-proficiency={item.skillParcentage}>
+                  {item.proficiency}
+
                   <p class="skill-percentage">
-                    {item.proficiency}&nbsp;
-                    (<span class="countup"></span>%)
+                      <span class="countup"></span>%
                   </p>
 
                   <div class="skill-bar-container">
                     <div class="skill-bar"></div>
                   </div>
+
                 </div>
                 <div className={styles["f-item"]}>{item.taste}</div>
               </div>

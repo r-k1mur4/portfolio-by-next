@@ -1,5 +1,9 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
+import { Helmet } from "react-helmet";
+
+
+
 export default function Document() {
   return (
     <Html lang="en">
@@ -12,6 +16,7 @@ export default function Document() {
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         />
+        <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
       </Head>
       <body>
         <Main />
