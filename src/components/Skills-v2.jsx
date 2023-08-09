@@ -144,7 +144,7 @@ const Skills = () => {
       <div className={styles.headlineBox}>
         <h3 className={styles.headline}></h3>
         <h3 className={styles.headline}>
-          Proficiency 習熟度 <br />
+          Proficiency <br />
           <span className={styles.note}>
             ※ 1 ~ 5<br />
             1:軽く触った程度

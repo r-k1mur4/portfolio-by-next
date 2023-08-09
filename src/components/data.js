@@ -3,37 +3,34 @@
 export const projectData = [
   {
     id: 1,
-    title: "Todo List App",
+    title: "のぞみ訪問看護リハビリテーションチーム登戸様",
     description:
-      "A simple Todo List App built with JavaScript. All datas are stored in localstorage. It helps users check list out their plans and tick as they do them.",
-    gitHubLink: "https://github.com/olawanlejoel/Todo-List-App",
+      "サイトリニューアルのデザイン、コーディング、WordPress化まで担当させていただきました。",
+    Link: "https://nozomi-medical.co.jp/",
+    src: "https://nozomi-medical.co.jp/wp-content/uploads/2021/03/ogp_01_01_pc_top.png",
   },
   {
     id: 2,
-    title: "Books Library App",
+    title: "CLUB PLAY HOUSE 様",
     description:
-      "A simple Book Library App built with JavaScript. It helps readers have a good list of books they are either currently reading or have finished reading.",
-    gitHubLink: "https://github.com/olawanlejoel/Book-Library",
+      "サイトLPリニューアルのコーディング、WordPress化まで担当させていただきました。",
+    Link: "http://clubplayhouse.jp/",
+    src: "/images/works/img_thum12.jpg",
   },
   {
     id: 3,
-    title: "Quotes Generator",
+    title: "楽天モバイルご契約者様限定キャンペーンLP",
     description:
-      "Helps you generate quotes from about 1600 quotes written by different authors . Quotes are automatically copied to your clipboards.",
-    gitHubLink: "https://github.com/olawanlejoel/random-quote-generator",
+      "楽天モバイルご契約者様限定キャンペーンLPのコーディングを担当させていただきました。",
+    Link: "https://tv.rakuten.co.jp/static/mobile_cpn/lp/svod/",
+    src: "https://im.akimg.tv.rakuten.co.jp/static/mobile_cpn/lp/svod/_common/img/ogp.png",
   },
   {
     id: 4,
-    title: "Password Generator",
+    title: "楽天モバイルご契約者様限定キャンペーンLP",
     description:
-      "Helps you generates random passwords, you can select what you want your password to entail and also you can copy generated password to clipboard.",
-    gitHubLink: "https://github.com/olawanlejoel/Password-Generator",
-  },
-  {
-    id: 5,
-    title: "Twitter UI Clone",
-    description:
-      "Simple Twitter UI clone built with TailwindCSS and Vue Js. This covers only the homepage of Twitter UI. This is cool to get started with TailwindCSS as it helps understand basic concepts.",
-    gitHubLink: "https://github.com/olawanlejoel/TwitterUI-clone",
+      "【楽天TV】はじめての方限定ポイントプレゼントLPのコーディングを担当し、更新業務を行っています。",
+    Link: "https://tv.rakuten.co.jp/static/cpn/mkt000036/",
+    src: "https://im.akimg.tv.rakuten.co.jp/static/cpn/mkt000036/img/ogp200.jpg",
   },
 ];
