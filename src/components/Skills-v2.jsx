@@ -105,11 +105,12 @@ const ITEMS = [
 // 配列ITEMS02 Applications
 const ITEMS02 = [
   {
-    skillName: "Visual Studio Code",
+    skillName: "VS Code",
     wrapperClassName: "skill-card",
     iconClassName: "",
     proficiency: "5",
     taste: "Like!",
+
   },
   {
     skillName: "Vi / Vim",
@@ -208,24 +209,23 @@ const Skills = () => {
 
       {/* Applications */}
       <h3 className={styles.headlineSub}>
-        <i class="fa-solid fa-screwdriver-wrench"></i> Applications
+        <i class="fa-solid fa-screwdriver-wrench"></i> Tools
       </h3>
 
-      <div className={`${styles["grid-skills-v2"]} `}>
+      <div className={`${styles["grid-skills-v2"]} ${styles.grid}`}>
         {ITEMS02.map((item) => {
           return (
             // <div className="skill-card">
             <>
               {/* <div className={item.wrapperClassName}> */}
-              <div className={styles["f-container"]}>
-                <div className={`${styles["skill-card"]} wrapperClassName`}>
+              <div className={styles["app-container"]}>
+                <div className={`${styles["skill-card-app"]} wrapperClassName`}>
                   <i className={item.iconClassName}></i>
                   <p>{item.skillName}</p>
                 </div>
-                <div className={styles["f-item"]}>{item.proficiency}</div>
-                <div className={styles["f-item"]}>{item.taste}</div>
+                {/* <div className={styles["f-item"]}>{item.proficiency}</div> */}
+                {/* <div className={styles["f-item"]}>{item.taste}</div> */}
               </div>
-              <br></br>
             </>
           );
         })}

@@ -8,7 +8,7 @@ const Contact = () => {
         お問い合わせは、<br className="br-sp"></br>下記のボタンからメールをお送りください。
       </p>
       <a href="mailto:frrk0418@gmail.com" className="cta-btn">
-        Say Hello to KIMURA
+        Mail to KIMURA
       </a>
     </div>
   );
